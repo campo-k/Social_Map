@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Social Mapping</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          rel="stylesheet" crossorigin="anonymous"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          rel="stylesheet" crossorigin="anonymous">
+    <link href="index.css" rel="stylesheet"/>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCWvDsKjkgi-zJdK8qcUTJqQ62epIF2pDY"
+            async defer></script>
+    <script src="jpegmeta.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+    <input id="storage" type="file" capture="camera" accept="image/*" />
+    <div class="ui-container">
+        <div class="ui-nav">
+            <div class="ui-nav-main">
+                <span>Social Mapping</span>
+                <div id="btn_nav" >
+                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                </div>
+            </div>
+            <ul class="ui-nav-sub">
+                <li class="active">Photo upload</li>
+                <li>Board</li>
+                <li>Information</li>
+            </ul>
+        </div>
+        <div class="ui-container-info">
+            <div id="machine-info"><span>접속 기기: </span><span></span></div>
+            <div id="machine-geo"><span>위치 정보: </span><span></span></div>
+        </div>
+        <div class="ui-container-comment">
+            <input>
+        </div>
+        <div class="ui-container-photo" style="display: none;">
+            <img id="img_photo" />
+        </div>
+        <div class="ui-container-geo" style="display: none;">
+            <div id="map"></div>
+        </div>
+        <div class="ui-container-btn">
+            <button id="btn_photo" type="button" class="btn btn-primary">
+                <i class="fa fa-camera fa-2x" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

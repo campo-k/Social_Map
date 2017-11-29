@@ -1,0 +1,79 @@
+#storage {
+    display: none;
+}
+.no-mobile {
+    width: 100%;
+    margin: 30px;
+    font-size: 50px;
+    text-align: center;
+    color: #535353;
+    font-weight: 800;
+}
+
+
+.ui-nav {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #535353;
+    padding: 10px 15px;
+}
+.ui-nav-sub,
+.ui-nav-main {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.ui-nav .ui-nav-main div {
+    width: 50px;
+    color:white;
+    float: right;
+    text-align: right;
+    display: inline-block;
+}
+.ui-nav-sub {
+    display: none;
+    padding: 10px 0 5px 0;
+}
+.ui-nav-sub li {
+    padding-left: 20px;
+    font-size: 14px;
+    font-weight: 200;
+    list-style: none;
+    margin-top: 5px;
+    line-height: 18px;
+}
+.ui-nav-sub li.active {
+    font-weight: 800;
+}
+
+
+.ui-container {
+    width: 100%;
+    border:0;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+.ui-container .ui-container-comment,
+.ui-container .ui-container-geo,
+.ui-container .ui-container-btn,
+.ui-container .ui-container-info,
+.ui-container .ui-container-photo {
+    width: calc(100% - 40px);
+    height: 100%;
+    margin: 20px;
+}
+.ui-container .ui-container-btn button,
+.ui-container .ui-container-photo img {
+    width: 100%;
+    margin: 0;
+    font-size: 25px;
+}
+.ui-container .ui-container-btn button {
+    padding: 8px 5px 5px 5px;
+}v
+.ui-container .ui-container-info span {
+
+}
